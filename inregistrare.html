@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Inregistrare</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- fontawesome -->	
+<script src="https://kit.fontawesome.com/f5c0ff2767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+<div class="primul-div blue"> </div>
+
+<!-- Nav -->
+	
+<nav class="wrapper">
+      <a href="index.html"><img src="img/logo donatori.png" alt="logo" class="logo"></a>
+      <ul id="sidemenu">
+          <li>
+              <a href="contact.html" id="contact">Contact</a>
+              <a href="despre.html" id="despre">Despre noi</a>
+              <!--<a href="" id="cont">Contul meu</a>-->
+              <a href="evenimente.html" id="evenimente">Evenimente</a>
+			  <a href="evenimentnou.html" id="modifica">Modifică Evenimente</a>
+			  <a href="logare.html" id="logare"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Logare</a> 
+			  <!--<a href="" id="delogare"><i class="fa-solid fa-arrow-right-from-bracket"></i>Delogare</a>-->
+			  <a href="inregistrare.html" id="inregistrare"><i class="fa-solid fa-user"></i>Înregistrare</a>
+			  <!--<a href="" id="utilizator"><i class="fa-solid fa-user"></i> Utilizator</a>-->
+          </li>
+          <i class="fa-solid fa-xmark" onClick="inchidemeniu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onClick="deschidemeniu()"></i>
+  </nav>	
+	
+	
+<!-- Title -->
+	<h1 class="titlu-inregistrare blue">Înregistrare</h1>
+	<div class="inregistrare blue">
+  
+	  
+	  
+  <!-- FORM -->	
+	  
+	  <div class="inregistrare-form">
+
+      	<form>
+
+        <div><label>Nume</label> 
+		<input type="text" name="nume" placeholder="Nume" required></div>
+        <div><label>Prenume</label>		  
+		<input type="text" name="prenume" placeholder="Prenume" required></div>
+		<div><label>Adresă e-mail</label>  
+		<input type="email" name="email" placeholder="Adresă e-mail"></div>
+		<div><label>Telefon</label>		  
+		<input type="number" name="telefon" placeholder="Telefon"></div>
+		<div><label>Adresă</label>  
+		<input type="text" name="adresa" placeholder="stradă, nr."></div>
+		<div><label for="data-nasterii">Data nașterii</label><input type="text" placeholder="mm/dd/yyyy"
+         onfocus="(this.type='date')" id="data-nasterii"></div>
+		<div><label for="gender">Sex</label>
+			<div class="gender">
+			  	<div>
+				<label class="container">Feminin
+  				<input type="radio" name="sex" id="gender">
+  				<span class="checkmark"></span></label>
+				</div>
+				<div>
+				<label class="container">Masculin
+  				<input type="radio" name="sex">
+  				<span class="checkmark"></span></label>
+				</div>
+			</div>
+		</div>
+		<div><label for="mySelect">Grupa sanguină</label>
+  		<div>
+			<select name="grupa-sanguina" id="mySelect" class="custom-select">
+    		<option value="A">A</option>
+    		<option value="B">B</option>
+    		<option value="AB">AB</option>
+    		<option value="O">O</option>
+  			</select>
+		</div>
+		</div>
+		<div><label>Înălțime (cm)</label> 
+		<input type="number" name="inaltime" placeholder="174"></div>
+		<div><label>Greutate (kg)</label> 
+		<input type="number" name="greutate" placeholder="80"></div>
+			
+        <div class="rand-intreg"><label>CNP</label> 
+		<input type="number" name="greutate" placeholder="CNP"></div>
+		<div class="rand-intreg"><label>Parolă</label><input type="password" name="parola" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required></div>
+		<div class="rand-intreg"><label>Cofirmă parolă</label><input type="password" name="parola" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required></div>
+
+		<!--<p class="eroare rand-intreg">Completează toate câmpurile obligatorii!</p>
+		<p class="eroare rand-intreg">Parola trebuie să conțină cel puțin 8 caractere, o majusculă și o cifră!</p>-->
+		  
+        <button class="rand-intreg">ÎNREGISTRARE</button>
+        </form>
+        		
+  		</div>
+		 
+	 
+	</div>	 
+	
+<!-- Copyright -->
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i>Toate drepturile rezervate</p>		
+      <p><img src="img/logo white.png" alt="">Asociația Donatorilor de sânge</p>
+</div>
+	
+	
+	
+<!-- Navbar -->	
+<script src="nav.js"></script>
+<script src="dropdown.js"></script>
+
+	
+</body>
+</html>

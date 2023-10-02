@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Adaugă eveniment</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- fontawesome -->	
+<script src="https://kit.fontawesome.com/f5c0ff2767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+<div class="primul-div blue"> </div>
+
+<!-- Nav -->
+	
+<nav class="wrapper">
+      <a href="index.html"><img src="img/logo donatori.png" alt="logo" class="logo"></a>
+      <ul id="sidemenu">
+          <li>
+              <a href="contact.html" id="contact">Contact</a>
+              <a href="despre.html" id="despre">Despre noi</a>
+              <!--<a href="" id="cont">Contul meu</a>-->
+              <a href="evenimente.html" id="evenimente">Evenimente</a>
+			  <a href="evenimentnou.html" id="modifica">Modifică Evenimente</a>
+			  <a href="logare.html" id="logare"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Logare</a> 
+			  <!--<a href="" id="delogare"><i class="fa-solid fa-arrow-right-from-bracket"></i>Delogare</a>-->
+			  <a href="inregistrare.html" id="inregistrare"><i class="fa-solid fa-user"></i>Înregistrare</a>
+			  <!--<a href="" id="utilizator"><i class="fa-solid fa-user"></i> Utilizator</a>-->
+          </li>
+          <i class="fa-solid fa-xmark" onClick="inchidemeniu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onClick="deschidemeniu()"></i>
+  </nav>	
+	
+	
+<!-- Title -->
+	<h1 class="titlu blue">Adaugă un eveniment nou</h1>
+	<div class="adauga-eveniment blue">
+  
+	  
+	  
+  <!-- FORM -->	
+	  
+	  <div class="adauga-eveniment-form">
+
+      	<form>
+
+        <div><label>Titlu</label> 
+		<input type="text" name="titlu" placeholder="Titlu" required></div>
+		<div class="descriere"><label>Descriere</label>
+		<textarea name="descriere" rows="11" placeholder="Descriere"></textarea></div>
+        <div><label for="mySelect">Grupa sanguină</label>
+			<div>
+			<select name="grupa-sanguina" id="mySelect" class="custom-select">
+    		<option value="A">A</option>
+    		<option value="B">B</option>
+    		<option value="AB">AB</option>
+    		<option value="O">O</option>
+  			</select>
+			</div>
+		</div>
+		<div><label>Adresă clinică</label>  
+		<input type="text" name="text" placeholder="Adresă clinică"></div>
+		<div><label>Adresă e-mail clinică</label>  
+		<input type="email" name="email" placeholder="Adresă e-mail"></div>
+		<div><label>Telefon clinică</label>		  
+		<input type="number" name="telefon" placeholder="Telefon clinică"></div>
+
+		<!--<p class="eroare rand-intreg">Completează toate câmpurile obligatorii!</p> -->
+		  
+        <button class="rand-intreg">ADAUGĂ EVENIMENT</button>
+        </form>
+        		
+  		</div>
+		</div>
+
+	
+	
+<!-- Copyright -->
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i>Toate drepturile rezervate</p>		
+      <p><img src="img/logo white.png" alt="">Asociația Donatorilor de sânge</p>
+</div>
+	
+	
+	
+<!-- Navbar -->	
+<script src="nav.js"></script>
+<script src="dropdown.js"></script>
+	
+</body>
+</html>

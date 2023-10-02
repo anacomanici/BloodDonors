@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Contact</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- fontawesome -->	
+<script src="https://kit.fontawesome.com/f5c0ff2767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+<div class="primul-div blue"> </div>
+
+<!-- Nav -->
+	
+<nav class="wrapper">
+      <a href="index.html"><img src="img/logo donatori.png" alt="logo" class="logo"></a>
+      <ul id="sidemenu">
+          <li>
+              <a href="contact.html" id="contact">Contact</a>
+              <a href="despre.html" id="despre">Despre noi</a>
+              <!--<a href="" id="cont">Contul meu</a>-->
+              <a href="evenimente.html" id="evenimente">Evenimente</a>
+			  <a href="evenimentnou.html" id="modifica">Modifică Evenimente</a>
+			  <a href="logare.html" id="logare"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Logare</a> 
+			  <!--<a href="" id="delogare"><i class="fa-solid fa-arrow-right-from-bracket"></i>Delogare</a>-->
+			  <a href="inregistrare.html" id="inregistrare"><i class="fa-solid fa-user"></i>Înregistrare</a>
+			  <!--<a href="" id="utilizator"><i class="fa-solid fa-user"></i> Utilizator</a>-->
+          </li>
+          <i class="fa-solid fa-xmark" onClick="inchidemeniu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onClick="deschidemeniu()"></i>
+  </nav>	
+	
+	
+<!-- Title -->
+	<h1 class="titlu blue">Contactează-ne</h1>
+	<div class="contact blue">
+  
+	  
+	  
+  <!-- FORM -->	
+	  
+	  <div class="contact-form">
+
+      	<form>
+
+        <div class="nume"><label>Nume</label> 
+		<input type="text" name="nume" placeholder="Nume" required></div>
+        <div class="prenume"><label>Prenume</label>		  
+		<input type="text" name="prenume" placeholder="Prenume" required></div>
+		<div class="rand-intreg"><label>Adresă e-mail</label>  
+		<input type="email" name="email" placeholder="Adresă e-mail"></div>
+		<div class="rand-intreg"><label>Telefon</label>		  
+		<input type="number" name="telefon" placeholder="Telefon"></div>
+
+        <div class="rand-intreg"><label>Mesaj</label>
+		<textarea name="mesaj" rows="14" placeholder="Mesaj"></textarea></div>
+
+		<!--<p class="eroare rand-intreg">Completează toate câmpurile obligatorii!</p> -->
+		  
+        <button>TRIMITE MESAJ</button>
+        </form>
+        		
+  		</div>
+		
+<!-- Locatie -->	
+	<div class="locatie">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174852.23584788595!2d23.476429303457422!3d46.783300193014064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1685097348833!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<p><i class="fa-solid fa-location-dot"></i>str. Lorem Ipsum, nr 18, Cluj-Napoca</p>
+		<p><i class="fa-solid fa-square-phone"></i>01234567</p>
+		<p><i class="fa-solid fa-envelope"></i>conact@donatoridesange.ro</p>	
+	</div>
+	
+	</div>	
+	
+	
+	
+	
+<!-- Copyright -->
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i>Toate drepturile rezervate</p>		
+      <p><img src="img/logo white.png" alt="">Asociația Donatorilor de sânge</p>
+</div>
+	
+	
+	
+<!-- Navbar -->	
+<script src="nav.js"></script>
+	
+</body>
+</html>
